@@ -15,6 +15,10 @@ project in maya,  copy the file 'myModule.mod' to
 your MAYA_MODULE_PATH. Update the file to use the path to this
 folder as MY_PATH
 
+You can get the path using this mel command in maya:
+```
+getenv MAYA_MODULE_PATH
+```
 
 ##Examples
 * Run this code in maya to test how the reload works
@@ -40,12 +44,3 @@ import module
 logger = module.get_logger(__name__)
 logger.info('log level info')
 ```
-
-### MAYA_MODULE_PATH 
-
-you can get the path using this mel command in maya:
-```
-getenv MAYA_MODULE_PATH
-```
-
-
